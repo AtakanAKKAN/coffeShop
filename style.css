@@ -14,6 +14,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
 }
 
 h1,h2,h3,h4,h5,h6,span{
@@ -51,10 +52,12 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    
 }
 
 .container{
     padding: 2.5% 5%;
+    
 }
 
 .nav{
@@ -160,7 +163,7 @@ header{
 /*#### ABOUT ####*/
 
 #about{
-    width: 100%;
+    width: 100%;  
 }
 
 .about-container{
@@ -172,10 +175,13 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: white;
+    padding: 1%;
+    border-radius: 10px;
 }
 
 .about-header{
-    margin-bottom: 5%;
+    margin-bottom: 3.2%;
 }
 
 
@@ -229,18 +235,36 @@ header{
 
 #portfolio{
     /* background-color: rgb(116, 91, 55, 0.9); */
-    padding: 3% 2.5%;
+    padding: 1% 1.5%;
 }
 
 .portfolio{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto; 
+    background-color: white;
+    border-radius: 10px;
 }
 
 .portfolio-item{
     height: 300px;
     overflow: hidden;
     width: 100%;
+}
+
+.portfolio > div:nth-child(1){
+    border-top-left-radius: 10px;
+}
+
+.portfolio > div:nth-child(4){
+    border-top-right-radius: 10px;
+}
+
+.portfolio > div:nth-child(5){
+    border-bottom-left-radius: 10px;
+}
+
+.portfolio > div:nth-child(8){
+    border-bottom-right-radius: 10px;
 }
 
 .portfolio-item:hover img{
@@ -321,7 +345,7 @@ header{
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    padding: 6% 5% 4% 5%; 
+    padding: 5% 4% 3% 4%; 
 }
 
 .section-about-text{
@@ -507,6 +531,30 @@ header{
     .portfolio{
         display: grid;
         grid-template-columns: auto auto;
+    }
+
+    .portfolio > div:nth-child(1){
+        border-top-left-radius: 10px;
+    }
+
+    .portfolio > div:nth-child(2){
+        border-top-right-radius: 10px;
+    }
+    
+    .portfolio > div:nth-child(4){
+        border-top-right-radius: 0;
+    }
+    
+    .portfolio > div:nth-child(5){
+        border-bottom-left-radius: 0;
+    }
+
+    .portfolio > div:nth-child(7){
+        border-bottom-left-radius: 10px;
+    }
+    
+    .portfolio > div:nth-child(8){
+        border-bottom-right-radius: 10px;
     }
    
     .contact-content{
