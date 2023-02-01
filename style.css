@@ -41,6 +41,10 @@ h2::after{
     background-color: #644734;
 }
 
+.ani-right{
+    position: relative;
+}
+
 
   /* #### HEADER #### */
 
@@ -163,11 +167,12 @@ header{
 /*#### ABOUT ####*/
 
 #about{
-    width: 100%;  
+    min-width: 100%;  
 }
 
 .about-container{
     padding: 2%;
+    padding-bottom: 8%;
 }
 
 .about-content{
@@ -496,6 +501,29 @@ header{
 
 }
 
+@media screen and (max-width:720px){
+    .portfolio{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .portfolio > div:nth-child(2){
+        border-top-right-radius: 10px;
+    }
+
+    .portfolio > div:nth-child(5){
+        border-bottom-left-radius: 0px;
+    }
+
+    .portfolio > div:nth-child(4){
+        border-top-right-radius: 0px;
+    }
+
+    .portfolio > div:nth-child(7){
+        border-bottom-left-radius: 10px;
+    }
+}
+
 @media screen and (max-width:480px){
     .about_content .img{
         width: 100%;
@@ -530,15 +558,19 @@ header{
 
     .portfolio{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
     }
 
     .portfolio > div:nth-child(1){
         border-top-left-radius: 10px;
     }
 
-    .portfolio > div:nth-child(2){
+    .portfolio > div:nth-child(1){
         border-top-right-radius: 10px;
+    }
+
+    .portfolio > div:nth-child(2){
+        border-top-right-radius: 0px;
     }
     
     .portfolio > div:nth-child(4){
@@ -550,11 +582,15 @@ header{
     }
 
     .portfolio > div:nth-child(7){
-        border-bottom-left-radius: 10px;
+        border-bottom-left-radius: 0px;
     }
     
     .portfolio > div:nth-child(8){
         border-bottom-right-radius: 10px;
+    }
+
+    .portfolio > div:nth-child(8){
+        border-bottom-left-radius: 10px;
     }
    
     .contact-content{
